@@ -60,6 +60,9 @@ class MainActivity : AppCompatActivity() {
         ) == PackageManager.PERMISSION_GRANTED
     }
 
+    /**
+     * オーディオキャプチャするには、RECORD_AUDIOパーミッションの付与が必要。
+     */
     private fun requestRecordAudioPermission() {
         ActivityCompat.requestPermissions(
             this,

@@ -19,6 +19,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!--
+        Android10で[android.media.projection.MediaProjection]は、
+        foregroundServiceType、mediaProjectionの指定がされたフォアグランドサービスで扱う必要がある。
+        例えば、ActivityとかでMediaProjectionの初期化処理すると、SecurityExceptionが発生する.
+        -->
         <service
             android:name=".AudioCaptureService"
             android:foregroundServiceType="mediaProjection" />
