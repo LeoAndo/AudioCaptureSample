@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
     private fun requestRecordAudioPermission() {
         ActivityCompat.requestPermissions(
             this,
-            arrayOf(Manifest.permission.RECORD_AUDIO),
+            arrayOf(Manifest.permission.RECORD_AUDIO), //
             RECORD_AUDIO_PERMISSION_REQUEST_CODE
         )
     }
